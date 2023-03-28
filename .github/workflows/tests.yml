@@ -13,6 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+      with:
+        xcode-version: '14.1'
     - name: Lint
       run: swiftlint
     - name: Build for iOS
